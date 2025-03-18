@@ -1,0 +1,198 @@
+/* Reset básico para garantir que o design fique consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #2c3e50; /* Cor mais suave para o fundo */
+    padding: 10px 20px; /* Reduzimos o padding para a barra não ficar tão grande */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: #ecf0f1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo dos links de navegação */
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das listas de empresas e candidatos */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Formulários de entrada */
+input, textarea, button {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type="submit"], button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #2980b9;
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px;
+    }
+
+    nav h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    li {
+        padding: 8px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    li {
+        padding: 6px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

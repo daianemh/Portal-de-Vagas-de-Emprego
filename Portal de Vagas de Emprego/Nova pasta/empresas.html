@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - Portal de Vagas de Emprego</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Vagas de Emprego - Empresas</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="candidatos.html">Candidatos</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Empresas Cadastradas</h2>
+            <ul id="empresa-lista"></ul>
+
+            <h3>Cadastrar Nova Empresa</h3>
+            <form id="empresa-form">
+                <input type="text" id="nome" placeholder="Nome da Empresa" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <textarea id="descricao" placeholder="Descrição"></textarea>
+                <button type="submit">Cadastrar Empresa</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Portal de Vagas</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
